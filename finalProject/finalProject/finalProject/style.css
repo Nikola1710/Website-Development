@@ -1,0 +1,14 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 50vw;
+    height: 50vw;
+    background-image: url("aquarium.jpg");
+    background-repeat: no-repeat;
+    background-size: 115%;
+    
+}
+img{
+    width: 70px;
+    position: absolute;
+}
