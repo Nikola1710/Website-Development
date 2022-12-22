@@ -1,0 +1,108 @@
+:root {
+    --color:white;
+    --shadowing: 3px 3px 5px 3px teal;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+body{
+  color: var(--color);
+  letter-spacing: 3px;
+}
+
+h{
+  margin: 19px;
+  font-size: 45px;
+}
+
+
+button{
+  font-family: 'Bungee Spice', cursive;
+  font-size: 18px;
+  border-radius: 3px;
+  margin: 15px;
+}
+
+/* Dropdown content */
+.dropbtn {
+    background-color:transparent;
+    color: var(--color);
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+  /* The container positiones the dropdown content */
+.dropdown {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: var(--color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  border: 1px solid teal;
+  border-radius: 4px;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  /* Change of the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color:transparent;
+}
+
+
+
+/* Button Glow */
+
+a:hover {
+  border-radius: 25px;
+  color: #fff;
+  box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 10px , 0 0 10px ,
+    0 0 10px , 0 0 10px ;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+}
+
+
+.text > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@-webkit-keyframes blink {
+  100% {
+    box-shadow : 0 02px #fff, 0 0 4px #fff, 0 0 10px var(--shadowing), 0 0 10px var(--shadowing)
+    0 0 10px var(--shadowing), 0 0 10px var(--shadowing);
+  }
+}
+
+@keyframes blink {
+  100% {
+    box-shadow:0 02px #fff, 0 0 4px #fff, 0 0 10px var(--shadowing), 0 0 10px var(--shadowing)
+    0 0 10px var(--shadowing), 0 0 10px var(--shadowing);}
+}
+/* End */
+

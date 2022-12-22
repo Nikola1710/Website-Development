@@ -1,0 +1,51 @@
+:root{
+    --color:white;
+}
+
+
+body{
+    background-color: black ;
+    color: var(--color);
+}
+
+
+.navbar {
+    background-color:silver;
+    padding: 15px;
+  }
+  
+
+  .navbar a {
+    align-content:space-between;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+
+  .navbar a:hover {
+    background-color: transparent;
+    color: var(--color);
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  } 
+
+  
+  button{
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    border-color: black;
+    padding: 9px;
+    
+  }
+
+ 
