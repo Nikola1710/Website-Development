@@ -1,0 +1,6 @@
+<h2>{{title}}</h2>
+<p id="parag">Bulls and Cows</p>
+
+<input type="text" pattern="[0-9]" [(ngModel)]="guess" (keyup.enter)="checkGuess()" />
+<button (click)="checkGuess()">Guess</button>
+<p *ngIf="result">{{ result }}</p>
